@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+
+h1 {
+  @apply font-semibold font-outfit text-4xl md:text-5xl lg:text-6xl;
+}
+
+h2 {
+  @apply font-semibold font-outfit text-2xl md:text-4xl lg:text-5xl;
+}
+
+h3 {
+  @apply font-semibold font-outfit text-2xl lg:text-4xl;
+}
+
+h4 {
+  @apply font-semibold font-outfit text-base md:text-xl lg:text-2xl;
+}
+
+h5 {
+  @apply font-semibold font-outfit text-sm md:text-base lg:text-xl;
+}
+
+p, label, a {
+  @apply text-base lg:text-lg font-dm-sans;
+
+  &.bold {
+    @apply font-semibold;
+  }
+
+  &.small {
+    @apply text-sm lg:text-base;
+  }
+
+  &.xs {
+    @apply text-xs;
+  }
+}
