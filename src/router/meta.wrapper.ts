@@ -27,11 +27,11 @@ const metaWrapper = (to: RouteLocation, from: RouteLocation): void => {
   ).map((el) => el.parentNode?.removeChild(el));
 
   if (nearestWithMeta)
-    appendTags(nearestWithMeta.meta.metaTags);
+    appendTags(nearestWithMeta.meta.metaTags as Record<string, string>[]);
 }
 
-function appendTags(tags: any): void {
-  tags.map((tagDef: any) => {
+function appendTags(tags: Record<string, string>[]): void {
+  tags.map((tagDef: Record<string, string>) => {
     const tag = document.createElement("meta");
 
     Object.keys(tagDef).forEach((key) => {
