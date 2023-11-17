@@ -1,14 +1,12 @@
 <template>
   <div class="space-y-4">
-    <img
-      alt="Ayion logo"
-      src="../assets/logo.png"
-      class="w-20 h-auto mx-auto opacity-10 transition-all duration-200 cursor-pointer animate-pulse"
-    />
+    <img alt="Ayion logo" src="../assets/logo.png"
+      class="w-20 h-auto mx-auto opacity-10 transition-all duration-200 cursor-pointer animate-pulse" />
     <div class="space-y-2">
       <h3>Hello, my name is Ayo</h3>
       <p class="text-sm">and this is supposed to be my portfolio</p>
       <p class="text-xs">it'll be done soon, I promise</p>
+      <a href="https://directory.nulll.xyz" class="text-xs">Till then, Check out some of the stuff I've worked on...</a>
     </div>
   </div>
 </template>
